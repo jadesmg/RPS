@@ -1,0 +1,127 @@
+/* styles.css */
+/* universal selector - Applies to whole document */
+*{
+	background: #86A7FC;
+	color: #FFDD95;
+}
+
+/* To center everything in game */
+.game{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+/* Title of the game */
+.title{
+	font-size: 6rem;
+	color: #3468C0;
+	font-weight: bolder;
+}
+
+/*scor board is appearing ontop of title text in smal screen :/*/
+/* Score Board */
+.score{
+	display: flex;
+	padding-left: 2%;
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-bottom: 1%;	
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 25px;
+	border-color: #3468C0;
+}
+
+.playerScore{
+	padding-right: 4%;
+}
+
+.computerScore{
+	padding-left: 4%;
+}
+
+/* Score */
+.p-count,.c-count{
+	text-align: center;
+	font-size: 4rem;
+	color: #FF9843;
+}
+
+/* displaying three buttons in one line */
+.options{
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+}
+
+/* Styling on all three buttons */
+.rock, .paper, .scissor{
+	padding: 0.8rem;
+	border-radius: 10px;
+	background: #FF9843;
+	color: #3468C0;
+	border: none;
+	font-size: 3rem;
+}
+
+.rock:hover, .paper:hover, .scissor:hover{
+	background: #3468C0;
+	color: #FF9843;
+}
+
+.move{
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.movesleft{
+	font-size: 2rem;
+}
+
+/* Reload button style */
+.reload {
+	display: none;
+	padding: 1rem;
+	background: #FF9843;
+	color: #3468C0;
+	outline: none;
+	border:none;
+	border-radius: 10px;
+	font-size: 3rem;
+}
+
+.reload:hover{
+	background: #3468C0;
+	color: #FF9843;
+}
+
+
+.result{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 3rem;
+	color: #3468C0;
+	font-weight: bolder;
+	border-radius: 25px;
+	border-width: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{ 
+	.title{
+		font-size: 5rem;
+	}
+	.score{
+	padding: 4.5%;
+	}
+	.rock, .paper, .scissor, .reload{
+		font-size: 1.5em;
+		margin: 10px;
+	}
+	.reload{
+		margin-top: 3px;
+	}
+}
